@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+<meta name="theme-color" content="#317EFB" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" name="viewport">
+<meta name="description" content="对hexo部署的过程和流程。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="帮助文档">
+<meta property="og:url" content="https://empyrea-azure.github.io/hexo-async/2025/05/17/help/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="对hexo部署的过程和流程。">
+<meta property="og:locale">
+<meta property="og:image" content="https://empyrea-azure.github.io/img/404.jpg">
+<meta property="article:published_time" content="2025-05-17T09:25:43.697Z">
+<meta property="article:modified_time" content="2025-05-17T09:28:15.952Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://empyrea-azure.github.io/img/404.jpg">
+
+
+<title >帮助文档</title>
+
+<!-- Favicon -->
+
+    <link href='/log.svg?v=2.2.6' rel='icon' type='image/png' sizes='16x16' ></link>
+
+
+    <link href='/log.svg?v=2.2.6' rel='icon' type='image/png' sizes='32x32' ></link>
+
+
+    <link href='/log.svg?v=2.2.6' rel='apple-touch-icon' sizes='180x180' ></link>
+
+
+    <link href='/site.webmanifest' rel='manifest' ></link>
+
+
+<!-- Plugin -->
+
+
+
+
+    
+<link rel="stylesheet" href="/css/plugins/bootstrap.row.css">
+
+    
+<link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@4.0/dist/fancybox.css">
+
+    
+<link rel="stylesheet" href="https://npm.elemecdn.com/swiper@4.5.1/dist/css/swiper.min.css">
+
+    
+
+
+
+
+<!-- Icon -->
+
+    
+<link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+
+
+
+
+<!-- Variable -->
+<script>window.ASYNC_CONFIG = {"hostname":"empyrea-azure.github.io","author":"John Doe","root":"/","typed_text":["Web Developer"],"theme_version":"2.2.6","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":"log.svg","icon16":"log.svg","icon32":"log.svg","apple_touch_icon":"log.svg","webmanifest":"/site.webmanifest","visibilitychange":true,"hidden":"failure.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://npm.elemecdn.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false},"toc":{"post_title":true},"live_time":{"start_time":"","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"}};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2025-05-17 17:28:15"};</script>
+
+<!-- Theme mode css -->
+<link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.6" id="trm-switch-style">
+<script>
+    let defaultMode = ASYNC_CONFIG.theme.default !=='auto' ?  ASYNC_CONFIG.theme.default : (window.matchMedia("(prefers-color-scheme: light)").matches ? 'style-light' : 'style-dark')
+    let catchMode = localStorage.getItem('theme-mode') || defaultMode;
+    let type = catchMode === 'style-dark' ? 'add' : 'remove';
+    document.documentElement.classList[type]('dark')
+</script>
+
+<!-- CDN -->
+
+
+    
+    
+
+
+
+<!-- Site Analytics -->
+
+ 
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+
+  <!-- app wrapper -->
+  <div class="trm-app-frame">
+
+    <!-- page preloader -->
+    <div class="trm-preloader">
+    <div class="trm-holder">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+    <!-- page preloader end -->
+
+    <!-- change mode preloader -->
+    <div class="trm-mode-swich-animation-frame">
+    <div class="trm-mode-swich-animation">
+        <i class="i-sun"><i class="iconfont far fa-sun"></i></i>
+        <div class="trm-horizon"></div>
+        <i class="i-moon"><i class="iconfont far fa-moon"></i></i>
+    </div>
+</div>
+    <!-- change mode preloader end -->
+
+      <!-- scroll container -->
+      <div id="trm-dynamic-content" class="trm-swup-animation">
+        <div id="trm-scroll-container" class="trm-scroll-container" style="opacity: 0">
+            <!-- top bar -->
+            <header class="trm-top-bar">
+	<div class="container">
+		<div class="trm-left-side">
+			<!-- logo -->
+<a href="/" class="trm-logo-frame trm-anima-link">
+    
+        <img alt="logo" src="/log.svg">
+    
+    
+        <div class="trm-logo-text">
+            Empyrea<span>Azure</span>
+        </div>
+    
+</a>
+<!-- logo end -->
+		</div>
+		<div class="trm-right-side">
+			<!-- menu -->
+<div class="trm-menu">
+    <nav>
+        <ul>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/" target="">
+                    首页
+                </a>
+                
+                <ul>
+                    
+                    <li>
+                        <a  href="/about/" target="">
+                            关于我们
+                        </a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/archives/" target="">
+                    归档
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/categories/" target="">
+                    分类
+                </a>
+                
+            </li>
+            
+            <li class="menu-item-has-children ">
+                <a  href="/about/" target="">
+                    关于我们
+                </a>
+                
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+<!-- menu end -->
+			
+    <!-- mode switcher place -->
+    <div class="trm-mode-switcher-place">
+        <div class="trm-mode-switcher">
+            <i class="iconfont far fa-sun"></i>
+            <input class="tgl tgl-light" id="trm-swich" type="checkbox">
+            <label class="trm-swich" for="trm-swich"></label>
+            <i class="iconfont far fa-moon"></i>
+        </div>
+    </div>
+    <!-- mode switcher place end -->
+
+			
+		</div>
+		<div class="trm-menu-btn">
+			<span></span>
+		</div>
+	</div>
+</header>
+            <!-- top bar end -->
+
+            <!-- body -->
+            
+<div class="trm-content-start">
+    <!-- banner -->
+    <div class="trm-banner">
+    
+    <!-- banner cover -->
+    <img style="object-position:top;object-fit:cover;" alt="banner" class="trm-banner-cover" src="/img/banner.png">
+    <!-- banner cover end -->
+    
+
+    <!-- banner content -->
+    <div class="trm-banner-content trm-overlay">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4"></div>
+                
+                <div class="col-lg-8">
+
+                    <!-- banner title -->
+                    <div class="trm-banner-text ">
+                        <div class="trm-label trm-mb-20">
+                            NEWS LETTER
+                        </div>
+                        <h1 class="trm-mb-30 trm-hsmb-font">
+                            帮助文档
+                        </h1>
+
+                        
+                            <ul class="trm-breadcrumbs trm-label">
+                                <li>
+                                    <a href="/" class="trm-anima-link">Home</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        2025
+                                    </span>
+                                </li>
+                            </ul>
+                        
+                    </div>
+                    <!-- banner title end -->
+
+                    <!-- scroll hint -->
+                    <span id="scroll-triger" class="trm-scroll-hint-frame">
+                        <div class="trm-scroll-hint"></div>
+                        <span class="trm-label">Scroll down</span>
+                    </span>
+                    <!-- scroll hint end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner content end -->
+</div>
+    <!-- banner end -->
+    <div class="container">
+        <div class="row">
+            
+                <div class="trm-page-sidebar col-lg-4 hidden-sm">
+                    <!-- main card -->
+                    <div class="trm-main-card-frame trm-sidebar">
+    <div class="trm-main-card"> 
+        <!-- card header -->
+<div class="trm-mc-header">
+    <div class="trm-avatar-frame trm-mb-20">
+        <img alt="Avatar" class="trm-avatar" src="https://picx.zhimg.com/80/v2-f5d7836fa93a976ec7181042be3310d8_720w.webp?source=1def8aca">
+    </div>
+    <h5 class="trm-name trm-mb-15">
+        Empyrea
+    </h5>
+    
+        <div class="trm-label">
+            I`m
+            <span class="trm-typed-text">
+                <!-- Words for theme.user.typedText -->
+            </span>
+        </div>
+    
+</div>
+<!-- card header end -->
+        <!-- sidebar social -->
+
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<div class="trm-social">
+    
+        <a href="https://github.com" title="github" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-github"></i>
+        </a>
+    
+        <a href="https://weixin.qq.com" title="weixin" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-weixin"></i>
+        </a>
+    
+        <a href="https://weixin.qq.com" title="qq" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-qq"></i>
+        </a>
+    
+        <a href="https://weibo.com" title="weibo" rel="nofollow" target="_blank">
+            <i class="iconfont fab fa-weibo"></i>
+        </a>
+    
+</div>
+
+<!-- sidebar social end -->
+        <!-- info -->
+<div class="trm-divider trm-mb-40 trm-mt-40"></div>
+<ul class="trm-table trm-mb-20">
+    
+        <li>
+            <div class="trm-label">
+                住宅:
+            </div>
+            <div class="trm-label trm-label-light">
+                宇宙之外
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                城市:
+            </div>
+            <div class="trm-label trm-label-light">
+                M-78星云
+            </div>
+        </li>
+    
+        <li>
+            <div class="trm-label">
+                联系我:
+            </div>
+            <div class="trm-label trm-label-light">
+                188***6666
+            </div>
+        </li>
+    
+</ul>
+<!-- info end -->
+
+        
+    <div class="trm-divider trm-mb-40 trm-mt-40"></div>
+    <!-- action button -->
+    <div class="text-center">
+        <a href="mailto:2432199489@qq.com" class="trm-btn">
+            联系我
+            <i class="iconfont far fa-envelope"></i>
+        </a>
+    </div>
+    <!-- action button end -->
+
+    </div>
+</div>
+                    <!-- main card end -->
+                </div>
+            
+            <div class="trm-page-content col-lg-8">
+                <div id="trm-content" class="trm-content">
+                    <div class="trm-post-info row hidden-sm">
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-calendar-alt trm-icon"></i><br>
+            05/17
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-clock trm-icon"></i><br>
+            17:25
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div id="post-author" class="trm-card trm-label trm-label-light text-center">
+            <i class="iconfont far fa-user trm-icon"></i><br>
+            John Doe
+        </div>
+    </div>
+</div>
+<div class="trm-card ">
+    <article id="article-container" class="trm-publication">
+    <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a><strong>Quick Start</strong></h1><h2 id="部署hexo的命令行："><a href="#部署hexo的命令行：" class="headerlink" title="部署hexo的命令行："></a>部署hexo的命令行：</h2><ul>
+<li><code>npm install hexo-cli -g    //下载hexo命令行</code></li>
+<li><code>hexo init blog  //新建一个blog文件</code></li>
+<li><code>cd blog  //切换到blog文件夹</code></li>
+<li><code>npm install  //项目初始化</code></li>
+<li><code>hexo server  //hexo运行</code></li>
+</ul>
+<h2 id="下载hexo-theme主题的语句："><a href="#下载hexo-theme主题的语句：" class="headerlink" title="下载hexo-theme主题的语句："></a>下载hexo-theme主题的语句：</h2><p>git clone -b master <a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly.git">https://github.com/jerryc127/hexo-theme-butterfly.git</a> themes&#x2F;butterfly<br>&#x2F;&#x2F;找到对应主题的下载命令</p>
+<h3 id="应用主题"><a href="#应用主题" class="headerlink" title="应用主题"></a>应用主题</h3><p>修改 Hexo 根目录下的 _config.yml，把主题改为 butterfly</p>
+<p><code>theme: butterfly</code> </p>
+<h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p>如果你没有 pug 以及 stylus 的渲染器，请下载安装：<br><code>npm install hexo-renderer-pug hexo-renderer-stylus --save</code></p>
+<p><img src="C:\Users\1\AppData\Roaming\Typora\typora-user-images\image-20250506191416260.png" alt="image-20250506191416260"  data-tag='post-image' onload='this.onload=null;this.style.opacity=1;' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<h3 id="新建文章命令："><a href="#新建文章命令：" class="headerlink" title="新建文章命令："></a>新建文章命令：</h3><p>新建一个文件命令：</p>
+<p><code>hexo new name</code></p>
+<p>在指定位置新建一个文件：</p>
+<p><code>hexo new _posts name</code></p>
+<h3 id="上传GitHub命令："><a href="#上传GitHub命令：" class="headerlink" title="上传GitHub命令："></a>上传GitHub命令：</h3><h3 id="1-创建-GitHub-项目仓库"><a href="#1-创建-GitHub-项目仓库" class="headerlink" title="1. 创建 GitHub 项目仓库"></a><strong>1. 创建 GitHub 项目仓库</strong></h3><h4 id="1-1-仓库命名与初始化"><a href="#1-1-仓库命名与初始化" class="headerlink" title="1.1 仓库命名与初始化"></a><strong>1.1 仓库命名与初始化</strong></h4><ul>
+<li><strong>必须注意</strong>：<ul>
+<li>仓库名任意（如 <code>my-blog</code>），但 <strong>不要</strong> 使用 <code>用户名.github.io</code>。</li>
+<li>如果勾选 <code>Initialize with a README</code>，后续部署时需要先拉取仓库内容（避免冲突）。</li>
+</ul>
+</li>
+<li><strong>推荐操作</strong>：不勾选 <code>README</code>，直接创建空仓库。</li>
+</ul>
+<h4 id="1-2-仓库权限（公开或私有）"><a href="#1-2-仓库权限（公开或私有）" class="headerlink" title="1.2 仓库权限（公开或私有）"></a><strong>1.2 仓库权限（公开或私有）</strong></h4><ul>
+<li><strong>注意</strong>：<ul>
+<li>如果仓库设为 <strong>私有</strong>，GitHub Pages 功能需要付费（Pro 账户）。</li>
+<li>免费用户必须选择 <strong>公开仓库</strong>。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-配置-Hexo-部署设置"><a href="#2-配置-Hexo-部署设置" class="headerlink" title="2. 配置 Hexo 部署设置"></a><strong>2. 配置 Hexo 部署设置</strong></h3><h4 id="2-1-修改-config-yml-的细节"><a href="#2-1-修改-config-yml-的细节" class="headerlink" title="2.1 修改 _config.yml 的细节"></a><strong>2.1 修改 <code>_config.yml</code> 的细节</strong></h4><ul>
+<li><p><strong>文件路径</strong>：Hexo 博客根目录下的 <code>_config.yml</code>。</p>
+</li>
+<li><p><strong>必须严格遵循的格式</strong>：</p>
+<p>yaml</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/你的用户名/仓库名.git</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>缩进</strong>：<code>type</code>、<code>repo</code>、<code>branch</code> 前必须有 <strong>两个空格</strong>，不能用 Tab。</li>
+<li><strong>冒号后必须有空格</strong>：例如 <code>repo: https://...</code>（正确），<code>repo:https://...</code>（错误）。</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-2-分支名称选择"><a href="#2-2-分支名称选择" class="headerlink" title="2.2 分支名称选择"></a><strong>2.2 分支名称选择</strong></h4><ul>
+<li><strong>推荐分支名</strong>：<code>gh-pages</code>（GitHub 默认识别此分支为 Pages 源）。</li>
+<li><strong>若分支已存在</strong>：部署时会覆盖原有内容，确保分支无重要数据。</li>
+</ul>
+<h4 id="2-3-安装部署插件"><a href="#2-3-安装部署插件" class="headerlink" title="2.3 安装部署插件"></a><strong>2.3 安装部署插件</strong></h4><ul>
+<li><p><strong>命令</strong>：</p>
+<p>bash</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>常见问题</strong>：</p>
+<ul>
+<li><p><strong>网络超时</strong>：切换 npm 镜像源：</p>
+<p>bash</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https://registry.npmmirror.com</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>权限不足</strong>：在命令前加 <code>sudo</code>（仅限 macOS&#x2F;Linux）。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-部署到-GitHub"><a href="#3-部署到-GitHub" class="headerlink" title="3. 部署到 GitHub"></a><strong>3. 部署到 GitHub</strong></h3><h4 id="3-1-执行部署命令"><a href="#3-1-执行部署命令" class="headerlink" title="3.1 执行部署命令"></a><strong>3.1 执行部署命令</strong></h4><ul>
+<li><p><strong>完整流程</strong>：</p>
+<p>bash</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean    # 清除旧文件（必须！避免残留缓存）</span><br><span class="line">hexo generate # 生成静态文件（可简写为 hexo g）</span><br><span class="line">hexo deploy   # 部署到 GitHub（可简写为 hexo d）</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>成功提示</strong>：</p>
+<ul>
+<li><code>INFO Deploy done: git</code>。</li>
+<li>检查 GitHub 仓库是否生成 <code>gh-pages</code> 分支。</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-2-处理身份验证问题-（第一次上传部署的时候，没有用到这个）"><a href="#3-2-处理身份验证问题-（第一次上传部署的时候，没有用到这个）" class="headerlink" title="3.2 处理身份验证问题  （第一次上传部署的时候，没有用到这个）"></a><strong>3.2 处理身份验证问题</strong>  （第一次上传部署的时候，没有用到这个）</h4><ul>
+<li><p><strong>HTTPS 协议</strong>：</p>
+<ul>
+<li>GitHub 已禁用密码验证，需使用 <strong>Personal Access Token (PAT)</strong>：<ol>
+<li>生成 PAT：GitHub → Settings → Developer Settings → Personal Access Tokens → 勾选 <code>repo</code> 权限。</li>
+<li>部署时输入用户名 + PAT 代替密码。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p><strong>SSH 协议</strong>（推荐）：</p>
+<ul>
+<li><p>生成 SSH 密钥：</p>
+<p>bash</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C &quot;你的邮箱&quot;</span><br><span class="line"># 全部按回车，默认路径保存</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将公钥 <code>~/.ssh/id_ed25519.pub</code> 内容粘贴到 GitHub → Settings → SSH and GPG keys。</p>
+</li>
+<li><p>测试连接：</p>
+<p>bash</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com  # 显示 &quot;Hi 用户名! You&#x27;ve successfully authenticated&quot; 表示成功</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h3 id="4-设置-GitHub-Pages"><a href="#4-设置-GitHub-Pages" class="headerlink" title="4. 设置 GitHub Pages"></a><strong>4. 设置 GitHub Pages</strong></h3><h4 id="4-1-指定-Pages-源分支"><a href="#4-1-指定-Pages-源分支" class="headerlink" title="4.1 指定 Pages 源分支"></a><strong>4.1 指定 Pages 源分支</strong></h4><ul>
+<li><strong>路径</strong>：仓库 → Settings → Pages → Build and deployment → Branch。</li>
+<li><strong>必须选择</strong>：<ul>
+<li><strong>Branch</strong>：<code>gh-pages</code>（或其他部署分支）。</li>
+<li><strong>Folder</strong>：<code>/(根目录)</code>。</li>
+</ul>
+</li>
+<li><strong>成功标志</strong>：<ul>
+<li>页面顶部显示绿色提示：<code>Your site is published at https://用户名.github.io/仓库名/</code>。</li>
+<li>首次部署可能需要 1-2 分钟生效。</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-2-自定义域名（可选，第一次部署没有用到）"><a href="#4-2-自定义域名（可选，第一次部署没有用到）" class="headerlink" title="4.2 自定义域名（可选，第一次部署没有用到）"></a><strong>4.2 自定义域名（可选，第一次部署没有用到）</strong></h4><ul>
+<li><p><strong>步骤</strong>：</p>
+<ol>
+<li><p>在 Pages 设置页输入域名（如 <code>blog.example.com</code>）。</p>
+</li>
+<li><p>在域名服务商添加 CNAME 记录：</p>
+<p>plaintext</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">类型：CNAME</span><br><span class="line">名称：blog（或其他子域名）</span><br><span class="line">值：用户名.github.io</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在 Hexo 的 <code>source</code> 目录创建 <code>CNAME</code> 文件（无后缀），内容为域名。</p>
+</li>
+</ol>
+</li>
+<li><p><strong>验证</strong>：</p>
+<ul>
+<li>访问域名，若显示博客内容即成功。</li>
+<li>若失败，检查 DNS 解析状态（可用工具：<a target="_blank" rel="noopener" href="https://dnschecker.org/">https://dnschecker.org）。</a>.&#x2F;)</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-验证部署结果"><a href="#5-验证部署结果" class="headerlink" title="5. 验证部署结果"></a><strong>5. 验证部署结果</strong></h3><h4 id="5-1-检查网站内容"><a href="#5-1-检查网站内容" class="headerlink" title="5.1 检查网站内容"></a><strong>5.1 检查网站内容</strong></h4><ul>
+<li><p><strong>访问地址</strong>：<code>https://用户名.github.io/仓库名/</code>。</p>
+</li>
+<li><p><strong>常见问题</strong>：</p>
+<ul>
+<li><p><strong>404 错误</strong>：</p>
+<ul>
+<li>确认仓库 Pages 分支和文件夹设置正确。</li>
+<li>确认 <code>gh-pages</code> 分支内有 <code>index.html</code>。</li>
+</ul>
+</li>
+<li><p><strong>样式丢失</strong>：</p>
+<ul>
+<li><p>修改 Hexo 的 <code>_config.yml</code>：</p>
+<p>yaml</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">url: https://用户名.github.io/仓库名</span><br><span class="line">root: /仓库名/</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重新部署（返回3.1步骤）。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="5-2-查看-GitHub-仓库文件"><a href="#5-2-查看-GitHub-仓库文件" class="headerlink" title="5.2 查看 GitHub 仓库文件"></a><strong>5.2 查看 GitHub 仓库文件</strong></h4><ul>
+<li><strong>检查点</strong>：<ul>
+<li><code>gh-pages</code> 分支应有自动生成的静态文件（如 <code>index.html</code>, <code>css</code>, <code>js</code> 等）。</li>
+<li>若分支无文件，可能是部署命令未执行成功。</li>
+</ul>
+</li>
+</ul>
+<h3 id="6-后续更新博客"><a href="#6-后续更新博客" class="headerlink" title="6. 后续更新博客"></a><strong>6. 后续更新博客</strong></h3><h4 id="6-1-标准更新流程"><a href="#6-1-标准更新流程" class="headerlink" title="6.1 标准更新流程"></a><strong>6.1 标准更新流程</strong></h4><p>bash</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean   # 清除旧文件</span><br><span class="line">hexo generate  # 生成新文件</span><br><span class="line">hexo deploy    # 部署</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>强制推送</strong>（如果遇到冲突）：</p>
+<p>bash</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy --force</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="6-2-更新后未生效"><a href="#6-2-更新后未生效" class="headerlink" title="6.2 更新后未生效"></a><strong>6.2 更新后未生效</strong></h4><ul>
+<li><strong>可能原因</strong>：<ul>
+<li>浏览器缓存：按 <code>Ctrl + F5</code> 强制刷新。</li>
+<li>GitHub Pages 构建延迟：等待 1-2 分钟。</li>
+</ul>
+</li>
+</ul>
+<h3 id="7-终极故障排除"><a href="#7-终极故障排除" class="headerlink" title="7. 终极故障排除"></a><strong>7. 终极故障排除</strong></h3><h4 id="7-1-部署失败（ERROR-Deployer-not-found-git）"><a href="#7-1-部署失败（ERROR-Deployer-not-found-git）" class="headerlink" title="7.1 部署失败（ERROR Deployer not found: git）"></a><strong>7.1 部署失败（ERROR Deployer not found: git）</strong></h4><ul>
+<li><p><strong>原因</strong>：未安装 <code>hexo-deployer-git</code>。</p>
+</li>
+<li><p><strong>解决</strong>：</p>
+<p>bash</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="7-2-提示-Permission-denied-publickey"><a href="#7-2-提示-Permission-denied-publickey" class="headerlink" title="7.2 提示 Permission denied (publickey)"></a><strong>7.2 提示 Permission denied (publickey)</strong></h4><ul>
+<li><p><strong>原因</strong>：SSH 密钥未正确配置。</p>
+</li>
+<li><p><strong>解决</strong>：</p>
+<p>bash</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 1. 检查密钥是否存在</span><br><span class="line">ls ~/.ssh/id_ed25519.pub</span><br><span class="line"># 2. 将公钥添加到 GitHub</span><br><span class="line">cat ~/.ssh/id_ed25519.pub</span><br><span class="line"># 3. 测试连接</span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="7-3-部署后只有-README-md"><a href="#7-3-部署后只有-README-md" class="headerlink" title="7.3 部署后只有 README.md"></a><strong>7.3 部署后只有 README.md</strong></h4><ul>
+<li><p><strong>原因</strong>：未正确生成静态文件。</p>
+</li>
+<li><p><strong>解决</strong>：</p>
+<p>bash</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a><strong>总结</strong></h3><ul>
+<li><strong>每一步的核心检查点</strong>：<ol>
+<li>Git 和 Node.js 安装验证。</li>
+<li><code>_config.yml</code> 格式是否正确。</li>
+<li>GitHub 仓库分支与 Pages 设置是否匹配。</li>
+<li>部署命令是否包含 <code>hexo clean</code>。</li>
+<li>身份认证方式（SSH 或 PAT）。</li>
+</ol>
+</li>
+<li><strong>最终成功标志</strong>：通过 <code>https://用户名.github.io/仓库名/</code> 访问到完整博客。</li>
+</ul>
+<p>如果遇到问题，请随时提供完整的 <strong>命令行报错截图</strong> 或 <strong>页面显示效果</strong>，我会帮你分析！</p>
+
+</article>
+    
+    
+
+</div>
+<div class="trm-post-next-prev row">
+    <div class="col-lg-12">
+        <!-- title -->
+        <h5 class="trm-title-with-divider">
+            其他文章
+            <span data-number="02"></span>
+        </h5>
+    </div>
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2025/05/17/no2/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <img alt="cover" class="no-fancybox" src="/img/block.jpg">
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/">
+                    测试文章
+                </a>
+            </div>
+            <h5>
+                <a href="/2025/05/17/no2/" class="trm-anima-link">
+                    测试文章第二篇
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>25/05/17</li>
+                <li>17:38</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="col-lg-6">
+    <div class="trm-blog-card trm-scroll-animation">
+        <a href="/2025/05/17/no1/" class="trm-cover-frame trm-anima-link">
+            
+            
+                <img alt="cover" class="no-fancybox" src="/img/block.jpg">
+            
+        </a>
+        
+        <div class="trm-card-descr">
+            <div class="trm-label trm-category trm-mb-20">
+                <a href=" /categories/%E6%B5%8B%E8%AF%95%E5%88%86%E7%B1%BB/">
+                    测试分类
+                </a>
+            </div>
+            <h5>
+                <a href="/2025/05/17/no1/" class="trm-anima-link">
+                    测试文章第一篇
+                </a>
+            </h5>
+            <div class="trm-divider trm-mb-20 trm-mt-20"></div>
+            <ul class="trm-card-data trm-label">
+                <li>25/05/17</li>
+                <li>17:24</li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+    
+
+
+
+                    <div class="trm-divider footer-divider"></div>
+
+                    <!-- footer -->
+                    <footer class="trm-footer-card trm-scroll-animation">
+
+    
+
+    
+
+    
+        <div class="trm-footer-item">
+            <span>
+                由 <a href="https://www.bilibili.com/" target="_blank" rel="noopener">Bilibili</a> 驱动 v7.3.0
+            </span>
+            <span class="footer-separator" data-separator=" | "></span>
+            <span> 
+                主题 - 
+                <a rel="noopener" href='https://www.imalun.com/' target='_blank'>白云苍狗</a>
+                v2.2.6
+            </span>
+        </div>
+      
+
+     
+
+     
+</footer>
+                    <!-- footer end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- body end -->
+
+            
+
+            
+<div class="trm-fixed-container">
+    
+    
+        <div class="trm-fixed-btn" data-title="阅读模式" onclick="asyncFun.switchReadMode()">
+            <i class="iconfont fas fa-book-reader"></i>
+        </div>
+    
+    
+    <div id="trm-back-top" class="trm-fixed-btn" data-title="回到顶部">
+        <i class="iconfont fas fa-arrow-up"></i>
+    </div>
+</div>
+        </div>
+      </div>
+      <!-- scroll container end -->
+  </div>
+  <!-- app wrapper end -->
+
+  
+  <!-- Plugin -->
+
+
+
+
+    
+    
+<script src="https://npm.elemecdn.com/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    
+<script src="https://npm.elemecdn.com/swiper@4.5.1/dist/js/swiper.min.js"></script>
+
+
+    
+        <script src="/js/plugins/typing.js?v=2.2.6"></script>
+    
+
+    
+
+    <!-- 数学公式 -->
+    
+
+    <!-- 评论插件 -->
+    
+        
+
+        
+    
+
+		
+
+
+
+
+    <!-- Service Worker -->
+    
+    <!-- baidu push -->
+    
+
+
+<script id="async-script" src="/js/main.js?v=2.2.6"></script>
+
+<!-- CDN -->
+
+
+    
+
+    
+
+    
+
+
+
+</body>
+
+</html>
